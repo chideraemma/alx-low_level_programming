@@ -1,19 +1,14 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
+#include "main.h"
 
 /**
  * main - Entry point
  *
  * Retrun: return 1
  */
-int main(void)
+void positive_or_negative(int i)
 {
-	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	if (i > 0)
 	{
 		printf("%d is positive\n", i);
@@ -22,9 +17,8 @@ int main(void)
 	{
 		printf("%d is zero\n", i);
 	}
-	if
+	if (i < 0)
 	{
 		printf("%d is negative\n", i);
 	}
-	return (0);
 }
