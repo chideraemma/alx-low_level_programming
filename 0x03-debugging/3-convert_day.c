@@ -1,10 +1,11 @@
-#inclue "main.h"
+#include "main.h"
 
 /**
- * convert_day - coverts day of month today of year, without accouting
+ * convert_day - coverts day of month today of year, without accounting
  * for leap year
  * @month: month in number format
  * @day: day of month
+ *
  * Return: day of year
  */
 int convert_day(int month, int day)
@@ -30,10 +31,10 @@ int convert_day(int month, int day)
 			day = 181 + day;
 			break;
 		case 8:
-			day 212 + day;
+			day = 212 + day;
 			break;
 		case 9:
-			day 243 + day;
+			day = 243 + day;
 			break;
 		case 10:
 			day = 273 + day;
