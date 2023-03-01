@@ -8,5 +8,21 @@
  */
 void reset_to_98(int *n)
 {
-	*n = 98;
+	int digit, sign = 0;
+
+	if (*n < 0)
+	{
+		sign = 1;
+		*n = -*n;
+	}
+
+	do {
+		digit = *n % 10;
+		putchar(digit + '0');
+		*n /= 10;
+	}
+
+	while (*n > 0);
+	if (sign)
+		putchar('-');
 }
