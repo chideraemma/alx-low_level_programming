@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * *_strcat - function commute srtings
@@ -6,6 +6,7 @@
  * @src: param pointer to a char
  * Return: return value of dest
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int i;
